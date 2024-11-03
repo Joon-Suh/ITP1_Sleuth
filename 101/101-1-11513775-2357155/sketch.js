@@ -42,6 +42,7 @@ function setup()
 	createCanvas(img.width,img.height);
 	noFill();
 	strokeWeight(2);
+
 }
 
 function draw()
@@ -49,13 +50,18 @@ function draw()
 	image(img,0,0);
 
 	//Write your code below here ...
-
-
+	stroke(154,205,50)
+	rect(192,120,320,672);
+	stroke(255,127,80)
+	rect(1350,45,170,290);
 
 	//A helpful mouse pointer
 	push();
-		fill(0);
-		noStroke();
+		//fill(0);
+		//fill('deeppink');
+		textStyle("bold")
+		textSize(30)
+		//noStroke();
 		text(mouseX + "," + mouseY, mouseX,mouseY);
 	pop();
 
