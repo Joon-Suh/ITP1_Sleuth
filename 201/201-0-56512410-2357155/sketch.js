@@ -43,15 +43,24 @@ function draw()
     noFill();
 
     // write the code to draw around the evidence below
-
-
-
+    ellipse(717, 355,112)
+    ellipse(256, 223,122)
+    ellipse(717, 236,180)
+    ellipse(569, 239,120)
+    
 
     //A helpful mouse pointer
 	push();
+    //fill('deeppink');
+    textStyle("bold")
+    textSize(30);
         fill(0);
         noStroke();
         text(mouseX + "," + mouseY, mouseX,mouseY);
     pop();
+}
+function mousePressed()
+{
+    navigator.clipboard.writeText(mouseX+', '+mouseY)
 
 }
